@@ -16,7 +16,7 @@
     Write a callback below that uses the reduce
     array method to calculate the sum of all
     the food. 
-*/
+*/.
 
 const cart = [
     {
@@ -32,16 +32,14 @@ const cart = [
         price: 7.99
     }
 
-
-//CODE HERE
 ]
-const sum = cart.reduce(function(sum,price){
-    const newSum = sum + price;
-    return newSum; 
-}
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+//CODE HERE
 
+const summedPrice = cart.reduce(function(a,b){
+    return a + b.price;
+}, 0); 
 
+console.log(summedPrice)
 //////////////////PROBLEM 2////////////////////
 /*  
     Write a function called `calcFinalPrice` that
@@ -59,17 +57,14 @@ const sum = cart.reduce(function(sum,price){
 
 //CODE HERE
 function calcFinalPrice(cartTotal, couponValue, tax){
-let couponValue = '10'
-let tax = '.06'
-{
-    const sum = cart.reduce(function(cartTotal + tax);)
-    const supersum = cartTotal + tax;
-    return supersum;
-    const discountsum = cartTotal - couponValue;
-    return discountsum
-}
-}
+  
+    let couponValue = '10'
+    let tax = '.06' 
+    let cartTotal = (summedPrice * tax) - couponValue
 
+   
+}
+console.log(cartTotal)
 //////////////////PROBLEM 3////////////////////
 /*  
     In this problem, you'll create a model for 

@@ -30,13 +30,18 @@
 */
 
 //CODE HERE
-class Ticket{
-    constructor(items, orderTime, customerId)
-    static status
-    property.status = "Queued"
+class Ticket {
+    constructor(items, orderTime, customerId){
+        this.items = items;
+        this.orderTime = orderTime;
+        this.customerId = customerId;
+    } 
 }
-    updateStatus myMethod('newStatus')
 
+const waitTime = {
+    
+
+}
 /*
     Create a new instance of your class.
     Save it to a variable called `firstTicket`.

@@ -50,8 +50,8 @@ tags:['kids','vegpizza', 'hotnready']
 */
 
 //CODE HERE
-console.log(popularity)
-
+let pizzaPopularity = pizza.popularity
+console.log(pizzaPopularity)
 /*
     Second, log the second tag in your pizza's
     tags array.
@@ -60,8 +60,8 @@ console.log(popularity)
 */
 
 //CODE HERE
-console.log(tags)
-
+let pizzaDescriptor = pizza.tags[1]
+console.log(pizzaDescriptor)
 /*
     Third, destructure the price off of the
     pizza object.
@@ -71,8 +71,8 @@ console.log(tags)
 
 //CODE HERE
 
-const pizza = price.replace('10', '15')
-return price
+const {name, price, category, popularity, rating, tags} = pizza 
+console.log(price);
 /*
     Fourth, and last, destructure the category
     property.
@@ -82,7 +82,7 @@ return price
 
 //CODE HERE
 
-
+console.log(category);
 //////////////////PROBLEM 3////////////////////
 /* 
     Create an array with about 5 objects in it.
@@ -101,6 +101,7 @@ let foodArr = {
     cuisine: 'Mexican',
     spiceLevel:'7',
     mealTime:'Lunch',  
+    rating:'100',
 }
 
 
@@ -118,7 +119,9 @@ let foodArr = {
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(7)
+function processData(callback){
+    
+}
 
 
 

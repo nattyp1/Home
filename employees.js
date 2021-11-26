@@ -21,11 +21,18 @@
 
 //CODE HERE
 
-let Employee1 = {
-'name': '',
-'shifts': '',
-};
+ class Employee {
+    constructor(name,shift){
+        this.name = name;
+        this.shift = shift;
+ }
 
+ getSchedule(){
+     console.log('${this.name} works ${this.shift}')
+    }
+};
+let e = new Employee('sandra', 'weekday afternoons')
+e.getSchedule();
 
 /*
     Create a new instance of your class.
@@ -38,10 +45,6 @@ let Employee1 = {
 */
 
 //CODE HERE
-let emp0ne = {
-    'name':'jess',
-    'shifts':'weekday mornings, weekday afternoons'
-};
 
 /*
     Call the `getSchedule` method on the
@@ -49,8 +52,7 @@ let emp0ne = {
 */
 
 //CODE HERE
-let emp0ne = Employee1
-console.log(emp0ne)
+
 
 /*
     Make a copy of the empOne object
